@@ -5,12 +5,14 @@ import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.product_search.service.ProductService;
+
 @RestController
 public class ProductController {
-	private final ProductService search();
+	private final ProductService productService;
 
 	public ProductController(ProductService productService) {
-	    this.search() = List<String>;
+	    this.productService = productService;
 	}
 	
 	@GetMapping("/products")

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ProductService {
-	public List<String> search() {
+	public List<String> findAll() {
 		return List.of("pen","notebook","pencil case");
 	}
 }
