@@ -21,5 +21,11 @@ public class ProductController {
 				productService.findAll();
 	}
 	
+	public List<String> findAll(
+		    @RequestParam(name = "keyword", required = )
+		    String keyword) {
+		return productService.findAll();
+	}
+	
 
 }
